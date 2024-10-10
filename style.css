@@ -1,8 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -25,17 +24,16 @@
   background-size: cover;
   background-repeat: none;
   background-position: center;
-
 }
 
-.bg-1 h1{
-  font-family: 'Poppins', sans-serif;
+.bg-1 h1 {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 50px;
   line-height: 60px;
   font-weight: 600;
 }
-.bg-1 p{
+.bg-1 p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -53,17 +51,16 @@
   min-height: 523px;
 
   width: 100%;
-
 }
-.bg-2 h1{
-  font-family: 'Poppins', sans-serif;
+.bg-2 h1 {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 50px;
   line-height: 60px;
   font-weight: 600;
 }
 
-.bg-2 p{
+.bg-2 p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -79,22 +76,21 @@ p {
   background-color: rgba(239, 103, 40, 0.96);
   height: 100%;
   width: 100%;
-    background-size: cover;
+  background-size: cover;
   background-repeat: none;
   background-position: center;
-  
 }
-.txt-1 h2{
+.txt-1 h2 {
   line-height: 1.6em;
   font-family: "Poppins", sans-serif;
-  color:white;
+  color: white;
 }
-.txt-1 p{
-  color:#A7ACDD;
+.txt-1 p {
+  color: #a7acdd;
   font-family: "Open Sans", sans-serif;
 }
 
-.page5 p{
+.page5 p {
   font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
   line-height: 23px;
   font-size: 13px;
@@ -103,24 +99,24 @@ p {
   font-weight: 600;
   text-transform: uppercase;
 }
-.page5 h1{
+.page5 h1 {
   font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size:40px;
+  font-size: 40px;
   line-height: 56px;
 }
 
-.page5 p:nth-child(3){
+.page5 p:nth-child(3) {
   font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
   font-size: 16px;
-  color:rgb(12, 113, 195);
+  color: rgb(12, 113, 195);
 }
 
-.page6 p{
+.page6 p {
   font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
   line-height: 23px;
   font-size: 13px;
@@ -129,16 +125,15 @@ p {
   font-weight: 600;
   text-transform: uppercase;
 }
-.page6 h1{
+.page6 h1 {
   font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size:40px;
+  font-size: 40px;
   line-height: 56px;
 }
 
-
-.page7 p{
+.page7 p:nth-of-type(1) {
   font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
   line-height: 23px;
   font-size: 13px;
@@ -147,45 +142,60 @@ p {
   font-weight: 600;
   text-transform: uppercase;
 }
-.page7 h1{
+
+.page7 h1 {
   font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size:40px;
+  font-size: 40px;
   line-height: 56px;
 }
 
+.page7 small {
+  font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+  font-size: 14px;
+  line-height: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
 
+.badge {
+  background-color: #26008e;
+  font-family: Poppins;
+}
 
+.text-secondary {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 26px;
+  font-size: 15px;
+}
 
 @media (max-width: 768px) {
   .bg-1 {
-  min-height: 523px;
-  }
-
-  .bg-1 h1{
-    font-size: 30px;
-    line-height: 36px;
-  }
-  .bg-1 p{
-    font-size: 14px;
-    line-height: 28px;
-  }
-  .bg-2{
     min-height: 523px;
   }
-  .bg-2 h1{
+
+  .bg-1 h1 {
     font-size: 30px;
     line-height: 36px;
   }
-  .bg-2 p{
+  .bg-1 p {
     font-size: 14px;
     line-height: 28px;
   }
-
-
+  .bg-2 {
+    min-height: 523px;
+  }
+  .bg-2 h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .bg-2 p {
+    font-size: 14px;
+    line-height: 28px;
+  }
 }
 
-
 /* Page 5 Image Slide */
-
