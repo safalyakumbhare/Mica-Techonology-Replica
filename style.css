@@ -133,7 +133,7 @@ p {
   line-height: 56px;
 }
 
-.page7>p {
+.page7 p {
   font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
   line-height: 23px;
   font-size: 13px;
@@ -203,6 +203,22 @@ p {
   color: white;
   letter-spacing: 2px;
 }
+
+
+.footer
+{
+  height: 70vh;
+  width: 100%;
+  background-color: #161616;
+  color:white;
+}
+
+.footer ul li{
+  list-style-type: disc;
+}
+
+
+
 @media (max-width: 768px) {
   .bg-1 {
     min-height: 523px;
