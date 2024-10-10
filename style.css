@@ -133,7 +133,7 @@ p {
   line-height: 56px;
 }
 
-.page7 p:nth-of-type(1) {
+.page7>p {
   font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
   line-height: 23px;
   font-size: 13px;
@@ -172,6 +172,37 @@ p {
   font-size: 15px;
 }
 
+
+.page8{
+  background-image: url("Img/bg-bottom.png");
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: none;
+
+}
+
+.page8 h1{
+  font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 57px;
+  color:white;
+  line-height: 86px;
+}
+.page8 p{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  line-height: 32px;
+  font-size: 16px;
+  color:white;
+}
+.page8 button{
+  background-color: #26008E;
+  color: white;
+  letter-spacing: 2px;
+}
 @media (max-width: 768px) {
   .bg-1 {
     min-height: 523px;
