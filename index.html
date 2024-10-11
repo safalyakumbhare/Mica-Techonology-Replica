@@ -23,6 +23,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Smooth Scroll Locomotive Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+
+
+    <!-- Animate Library -->
+     <link rel="stylesheet" href="lib/animate/animate.min.css">
   </head>
   <body>
     <nav
@@ -77,7 +87,9 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Health</a></li>
-                <li><a class="dropdown-item" href="#">Industrial Rubber</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Industrial Rubber</a>
+                </li>
                 <li>
                   <a class="dropdown-item" href="#">OEM Parts</a>
                 </li>
@@ -100,97 +112,227 @@
         </div>
       </div>
     </nav>
-
-    <div class="page1">
-      <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active bg-1">
-            <div class="container-fluid">
-              <div class="row p-5 justify-content-center">
-                <div class="col-md-7 p-4 text-center pt-5">
-                  <h1 class="text-white">
-                    We Design & Fabricate Products that Empower Over 100,000
-                    Clients
-                  </h1>
-
-                  <p class="text-white">
-                    Converting an idea into a reality is never an easy task. In
-                    manufacturing, it all starts with a conception – an idea
-                    follow by design, engineering, prototyping and then
-                    fabrication.
-                  </p>
-
-                  <button
-                    class="btn btn-danger rounded-5 fw-bold p-md-2 ps-md-5 fs-md-5 pe-md-5"
-                  >
-                    Contact Us Now
-                  </button>
-                </div>
-              </div>
-            </div>
+    <div class="main">
+      <div class="page1 animated fadeIn">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
-          <div class="carousel-item bg-2">
-            <div class="container-fluid">
-              <div class="row p-5 justify-content-center">
-                <div class="row">
-                  <div class="col-md-6 text-center p-2">
-                    <img src="Img/bg-2.webp" class="img-fluid" alt="" />
-                  </div>
+          <div class="carousel-inner">
+            <div class="carousel-item  active bg-1">
+              <div class="container-fluid animated slideInUp">
+                <div class="row p-5 justify-content-center">
+                  <div class="col-md-7 p-4 text-center pt-5">
+                    <h1 class="text-white">
+                      We Design & Fabricate Products that Empower Over 100,000
+                      Clients
+                    </h1>
 
-                  <div
-                    class="col-md-5 d-flex align-items-center justify-content-evenly pt-5 flex-column"
-                  >
-                    <h1 class="text-white">Awarded Singapore SME 500 Award</h1>
                     <p class="text-white">
-                      MICA Technology has been awarded the prestigious Singapore
-                      SME 500 Award by the Association of Trade & Commerce
-                      (Singapore).
+                      Converting an idea into a reality is never an easy task.
+                      In manufacturing, it all starts with a conception – an
+                      idea follow by design, engineering, prototyping and then
+                      fabrication.
                     </p>
+
+                    <button
+                      class="btn btn-danger rounded-5 fw-bold p-md-2 ps-md-5 fs-md-5 pe-md-5"
+                    >
+                      Contact Us Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item bg-2">
+              <div class="container-fluid">
+                <div class="row p-5 justify-content-center">
+                  <div class="row">
+                    <div class="col-md-6 animated slideInLeft text-center p-2">
+                      <img src="Img/bg-2.webp" class="img-fluid" alt="" />
+                    </div>
+
+                    <div
+                      class="col-md-5 animated slideInUp d-flex align-items-center justify-content-evenly pt-5 flex-column"
+                    >
+                      <h1 class="text-white">
+                        Awarded Singapore SME 500 Award
+                      </h1>
+                      <p class="text-white">
+                        MICA Technology has been awarded the prestigious
+                        Singapore SME 500 Award by the Association of Trade &
+                        Commerce (Singapore).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item bg-2">
+              <div class="container-fluid">
+                <div class="row p-5 justify-content-center">
+                  <div class="row">
+                    <div class="col-md-6 text-center p-5">
+                      <img src="Img/bg-3.webp" class="img-fluid" alt="" />
+                    </div>
+
+                    <div
+                      class="col-md-6 d-flex justify-content-center pt-5 flex-column"
+                    >
+                      <h1 class="text-white p-2">ISO 9001 CERTIFIED</h1>
+                      <p class="text-white p-2">
+                        MICA Technology has been certified with Quality
+                        Management System by the GCL International of United
+                        Kingdom.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item bg-2">
-            <div class="container-fluid">
-              <div class="row p-5 justify-content-center">
-                <div class="row">
-                  <div class="col-md-6 text-center p-5">
-                    <img src="Img/bg-3.webp" class="img-fluid" alt="" />
-                  </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
 
-                  <div
-                    class="col-md-6 d-flex justify-content-center pt-5 flex-column"
-                  >
-                    <h1 class="text-white p-2">ISO 9001 CERTIFIED</h1>
-                    <p class="text-white p-2">
-                      MICA Technology has been certified with Quality Management
-                      System by the GCL International of United Kingdom.
-                    </p>
-                  </div>
-                </div>
+      <div class="page2">
+        <div class="container">
+          <div class="row p-5 justify-content-around">
+            <div class="col-md-5 p-3">
+              <small class="text-danger">VISION</small>
+              <h1 class="fw-bold display-6">
+                MICA Technology, Making Ideas into Reality
+              </h1>
+              <p class="text-secondary">
+                Coming up with great ideas is easy but it’s putting those ideas
+                into action that’s difficult. You may have a great business
+                concept but you don’t know where to start with. Well, bringing
+                an idea to life requires passion, patience, and, most
+                importantly, the ability to execute.
+              </p>
+              <p class="text-secondary">
+                That’s why MICA comes into the picture with the goal of helping
+                you to get your ideas into the market. We take care of
+                everything, and it doesn’t get any easier than that.
+              </p>
+
+              <button
+                class="btn mt-1 btn-dark pt-md-2 pe-md-4 ps-md-4 pb-md-2 rounded-5 fw-bold"
+              >
+                Learn more
+              </button>
+            </div>
+            <div class="col-md-5">
+              <img src="Img/pg-2.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page3">
+        <div class="container">
+          <div class="row p-5 justify-content-center">
+            <div class="col-md-8 p-5">
+              <iframe
+                class="w-100"
+                height="400px"
+                src="https://www.youtube.com/embed/ZAP8to_nEsQ"
+                title="Unleashing the Future of Manufacturing Industry: MICA Technology - Making Ideas into Reality"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active txt-1">
+            <div
+              class="row p-3 d-flex justify-content-center align-items-center"
+            >
+              <div class="col-md-10 p-4">
+                <h2>
+                  "A humanistic approach in designing and manufacturing our
+                  products. We strongly believe that when our clients succeed in
+                  their business we will also reap the rewards"
+                </h2>
+                <p>Our Equipment</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item txt-1">
+            <div
+              class="row p-3 d-flex justify-content-center align-items-center"
+            >
+              <div class="col-md-10 p-4">
+                <h2>
+                  "We are well equipped with a wide array of equipment to
+                  fabricate a complete range of consumable spare parts and
+                  tooling to meet our customers’ needs.
+                </h2>
+                <p>Value Proposition</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item txt-1">
+            <div
+              class="row p-3 d-flex justify-content-center align-items-center"
+            >
+              <div class="col-md-10 p-4">
+                <h2>
+                  "One stop technical consultant, design, fabrication services
+                  with ISO 9001 certification ensures highest quality. Depth
+                  control tolerance of downiest within 5 micron (0.005mm)"
+                </h2>
+                <p>Process Capitabilities</p>
               </div>
             </div>
           </div>
@@ -198,7 +340,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExampleFade"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -207,342 +349,234 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExampleFade"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
 
-    <div class="page2">
-      <div class="container">
-        <div class="row p-5 justify-content-around">
-          <div class="col-md-5 p-3">
-            <small class="text-danger">VISION</small>
-            <h1 class="fw-bold display-6">
-              MICA Technology, Making Ideas into Reality
-            </h1>
-            <p class="text-secondary">
-              Coming up with great ideas is easy but it’s putting those ideas
-              into action that’s difficult. You may have a great business
-              concept but you don’t know where to start with. Well, bringing an
-              idea to life requires passion, patience, and, most importantly,
-              the ability to execute.
-            </p>
-            <p class="text-secondary">
-              That’s why MICA comes into the picture with the goal of helping
-              you to get your ideas into the market. We take care of everything,
-              and it doesn’t get any easier than that.
-            </p>
+      <div class="page5">
+        <div class="container-fluid p-5">
+          <div class="row justify-content-center align-content-center">
+            <div class="col-md-6 text-center">
+              <p>Our Strengths</p>
+              <h1>We Build Tools For the Manufacturing & All Industries</h1>
+              <p>PRODUCTION IN QUANTITY WITH QUALITY</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="page6">
+        <div class="container-fluid p-5">
+          <div class="row justify-content-center align-content-center">
+            <div class="col-md-6 text-center">
+              <p>Global Presence</p>
+              <h1>Our Client</h1>
+            </div>
+          </div>
+
+          <div class="row ps-5 pe-5 justify-content-evenly p-4">
+            <div class="col-md-2 p-5">
+              <img src="Img/c1.webp" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-2 p-5">
+              <img src="Img/c2.webp" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-2 p-5">
+              <img src="Img/c3.webp" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-2 p-5">
+              <img src="Img/c4.webp" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-2 p-5">
+              <img src="Img/c5.webp" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-2 p-5">
+              <img src="Img/c6.webp" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page7">
+        <div class="container-fluid">
+          <div
+            class="row justify-content-center ps-md-5 pe-md-5 align-content-center"
+          >
+            <div class="col-md-6 text-center">
+              <p>locations</p>
+              <h1>Our Office</h1>
+            </div>
+          </div>
+
+          <div class="row ps-md-5 justify-content-evenly pe-md-5">
+            <div class="col-md-4 align-items-center">
+              <img src="Img/location.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-8 p-5">
+              <div class="row">
+                <div class="col-md-6 p-3">
+                  <small>MICA Technology Pte. Ltd.</small>
+                  <h5 class="d-inline">
+                    <span
+                      class="badge rounded-pill fw-normal pt-md-3 pb-md-3 m-1 fw-medium ps-3 pe-3"
+                      >Singapore</span
+                    >
+                  </h5>
+                  <p>
+                    <i class="fa-solid fa-location-dot text-primary m-1"></i
+                    ><span class="text-secondary"
+                      >33 Tannery Lane #03-01, Hoesteel Industrial Building
+                      Singapore 347789</span
+                    >
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-phone text-primary m-1"></i
+                    ><span class="text-secondary">+65 9003 0562 </span>
+                  </p>
+                </div>
+                <div class="col-md-6 p-3">
+                  <small>MICA Technology (Suzhou) Co.,Ltd.</small>
+                  <h5 class="d-inline">
+                    <span
+                      class="badge rounded-pill fw-normal pt-md-3 pb-md-3 m-1 fw-medium ps-3 pe-3"
+                      >China</span
+                    >
+                  </h5>
+                  <p>
+                    <i class="fa-solid fa-location-dot text-primary m-1"></i
+                    ><span class="text-secondary"
+                      >No.69 JiePu Road, Building 3-101/201 Qidi Intelligent
+                      Manufacturing Suzhou Industrial Park Jiang Su 215123,
+                      China</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 p-3">
+                  <small>MICA Technology (Penang) Sdn, Bhd </small>
+                  <h5 class="d-inline">
+                    <span
+                      class="badge rounded-pill fw-normal pt-md-3 pb-md-3 m-1 fw-medium ps-3 pe-3"
+                      >Malaysia</span
+                    >
+                  </h5>
+                  <p>
+                    <i class="fa-solid fa-location-dot text-primary m-1"></i
+                    ><span class="text-secondary"
+                      >23A-2, Arena Curve, Jalan Mahsuri Bandar Sunway Tunas
+                      11900 Bayan lepas, Penang, Malaysia</span
+                    >
+                  </p>
+                </div>
+                <div class="col-md-6 p-3">
+                  <small>Mica Technology (Jiangsu) Co., Ltd.</small>
+                  <h5 class="d-inline">
+                    <span
+                      class="badge rounded-pill fw-normal pt-md-3 pb-md-3 m-1 fw-medium ps-3 pe-3"
+                      >China</span
+                    >
+                  </h5>
+                  <p>
+                    <i class="fa-solid fa-location-dot text-primary m-1"></i
+                    ><span class="text-secondary"
+                      >Building 6, Semiconductor Industrial Park No. 1 Jingshan
+                      Road, Rudong Hi-Tech Zone Nantong 226000, China</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="page8 container-fluid p-md-5 d-flex justify-content-center align-items-center"
+      >
+        <div
+          class="row d-flex align-items-center mt-5 p-md-5 justify-content-center"
+        >
+          <div class="col-md-12 text-center">
+            <h1>Be Inspired</h1>
+            <p class="mt-md-4">
+              If you think good design is expensive, you should look at the cost
+              of bad design - Rath Speth
+            </p>
             <button
-              class="btn mt-1 btn-dark pt-md-2 pe-md-4 ps-md-4 pb-md-2 rounded-5 fw-bold"
+              class="btn mt-md-5 rounded-5 fw-bold pt-md-3 pb-md-3 ps-md-5 fs-5 pe-md-5"
             >
-              Learn more
+              Contact Us Now
             </button>
           </div>
+        </div>
+      </div>
+
+      <div class="footer container-fluid pt-md-5">
+        <div class="row justify-content-evenly">
+          <div class="col-md-4 p-3">
+            <p>OVERVIEW</p>
+            <ul>
+              <li>Home</li>
+              <li>About MICA Technology</li>
+              <li>Our Solutions</li>
+              <li>
+                Our Products
+                <ul>
+                  <li>Health</li>
+                  <li>Industrial Rubber</li>
+                  <li>OEM Parts</li>
+                  <li>Semiconductor Parts</li>
+                </ul>
+              </li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="col-md-4 p-3">
+            <p>CUSTOMER SERVICE</p>
+            <ul>
+              <li>Privacy Policy</li>
+              <li>Refund Policy</li>
+              <li>Terms of Services</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-around">
           <div class="col-md-5">
-            <img src="Img/pg-2.png" class="img-fluid" alt="" />
+            <p class="text-secondary mt-md-5">
+              © 2024 MICA Technology Pte. Ltd. @Aladdin Ben Brahem / LottieFiles
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <i class="fa-brands h1 text-primary fa-facebook m-1"></i>
+            <i class="fa-brands h1 text-info fa-linkedin m-1"></i>
+            <i class="fa-brands fa-youtube h1 text-danger m-1"></i>
           </div>
         </div>
       </div>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
+
+      <!-- Locomotive -->
+      <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+
+      <!-- Wow library -->
+       <script src="lib/wow/wow.min.js"></script>
+
+      <!-- Main JS -->
+      <script src="script.js"></script>
     </div>
-
-    <div class="page3">
-      <div class="container">
-        <div class="row p-5 justify-content-center">
-          <div class="col-md-8 p-5">
-            <iframe
-              class="w-100"
-              height="400px"
-              src="https://www.youtube.com/embed/ZAP8to_nEsQ"
-              title="Unleashing the Future of Manufacturing Industry: MICA Technology - Making Ideas into Reality"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      id="carouselExampleFade"
-      class="carousel slide carousel-fade"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active txt-1">
-          <div class="row p-3 d-flex justify-content-center align-items-center">
-            <div class="col-md-10 p-4">
-              <h2>
-                "A humanistic approach in designing and manufacturing our
-                products. We strongly believe that when our clients succeed in
-                their business we will also reap the rewards"
-              </h2>
-              <p>Our Equipment</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item txt-1">
-          <div class="row p-3 d-flex justify-content-center align-items-center">
-            <div class="col-md-10 p-4">
-              <h2>
-                "We are well equipped with a wide array of equipment to
-                fabricate a complete range of consumable spare parts and tooling
-                to meet our customers’ needs.
-              </h2>
-              <p>Value Proposition</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item txt-1">
-          <div class="row p-3 d-flex justify-content-center align-items-center">
-            <div class="col-md-10 p-4">
-              <h2>
-                "One stop technical consultant, design, fabrication services
-                with ISO 9001 certification ensures highest quality. Depth
-                control tolerance of downiest within 5 micron (0.005mm)"
-              </h2>
-              <p>Process Capitabilities</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleFade"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleFade"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <div class="page5">
-      <div class="container-fluid p-5">
-        <div class="row justify-content-center align-content-center">
-          <div class="col-md-6 text-center">
-            <p>Our Strengths</p>
-            <h1>We Build Tools For the Manufacturing & All Industries</h1>
-            <p>PRODUCTION IN QUANTITY WITH QUALITY</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page6">
-      <div class="container-fluid p-5">
-        <div class="row justify-content-center align-content-center">
-          <div class="col-md-6 text-center">
-            <p>Global Presence</p>
-            <h1>Our Client</h1>
-          </div>
-        </div>
-
-        <div class="row ps-5 pe-5 justify-content-evenly p-4">
-          <div class="col-md-2 p-5">
-            <img src="Img/c1.webp" class="img-fluid" alt="" />
-          </div>
-          <div class="col-md-2 p-5">
-            <img src="Img/c2.webp" class="img-fluid" alt="" />
-          </div>
-          <div class="col-md-2 p-5">
-            <img src="Img/c3.webp" class="img-fluid" alt="" />
-          </div>
-          <div class="col-md-2 p-5">
-            <img src="Img/c4.webp" class="img-fluid" alt="" />
-          </div>
-          <div class="col-md-2 p-5">
-            <img src="Img/c5.webp" class="img-fluid" alt="" />
-          </div>
-          <div class="col-md-2 p-5">
-            <img src="Img/c6.webp" class="img-fluid" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page7">
-      <div class="container-fluid">
-        <div
-          class="row justify-content-center ps-md-5 pe-md-5 align-content-center"
-        >
-          <div class="col-md-6 text-center">
-            <p>locations</p>
-            <h1>Our Office</h1>
-          </div>
-        </div>
-
-        <div class="row ps-md-5 justify-content-evenly pe-md-5">
-          <div class="col-md-4 align-items-center">
-            <img src="Img/location.png" class="img-fluid" alt="" />
-          </div>
-          <div class="col-md-8 p-5">
-            <div class="row">
-              <div class="col-md-6 p-3">
-                <small>MICA Technology Pte. Ltd.</small>
-                <h5 class="d-inline">
-                  <span
-                    class="badge rounded-pill fw-normal pt-md-3 pb-md-3 m-1 fw-medium ps-3 pe-3"
-                    >Singapore</span
-                  >
-                </h5>
-                <p>
-                  <i class="fa-solid fa-location-dot text-primary m-1"></i
-                  ><span class="text-secondary"
-                    >33 Tannery Lane #03-01, Hoesteel Industrial Building
-                    Singapore 347789</span
-                  >
-                </p>
-                <p>
-                  <i class="fa-solid fa-phone text-primary m-1"></i
-                  ><span class="text-secondary">+65 9003 0562 </span>
-                </p>
-              </div>
-              <div class="col-md-6 p-3">
-                <small>MICA Technology (Suzhou) Co.,Ltd.</small>
-                <h5 class="d-inline">
-                  <span
-                    class="badge rounded-pill fw-normal pt-md-3 pb-md-3 m-1 fw-medium ps-3 pe-3"
-                    >China</span
-                  >
-                </h5>
-                <p>
-                  <i class="fa-solid fa-location-dot text-primary m-1"></i
-                  ><span class="text-secondary"
-                    >No.69 JiePu Road, Building 3-101/201 Qidi Intelligent
-                    Manufacturing Suzhou Industrial Park Jiang Su 215123,
-                    China</span
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 p-3">
-                <small>MICA Technology (Penang) Sdn, Bhd </small>
-                <h5 class="d-inline">
-                  <span
-                    class="badge rounded-pill fw-normal pt-md-3 pb-md-3 m-1 fw-medium ps-3 pe-3"
-                    >Malaysia</span
-                  >
-                </h5>
-                <p>
-                  <i class="fa-solid fa-location-dot text-primary m-1"></i
-                  ><span class="text-secondary"
-                    >23A-2, Arena Curve, Jalan Mahsuri Bandar Sunway Tunas 11900
-                    Bayan lepas, Penang, Malaysia</span
-                  >
-                </p>
-              </div>
-              <div class="col-md-6 p-3">
-                <small>Mica Technology (Jiangsu) Co., Ltd.</small>
-                <h5 class="d-inline">
-                  <span
-                    class="badge rounded-pill fw-normal pt-md-3 pb-md-3 m-1 fw-medium ps-3 pe-3"
-                    >China</span
-                  >
-                </h5>
-                <p>
-                  <i class="fa-solid fa-location-dot text-primary m-1"></i
-                  ><span class="text-secondary"
-                    >Building 6, Semiconductor Industrial Park No. 1 Jingshan
-                    Road, Rudong Hi-Tech Zone Nantong 226000, China</span
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="page8 container-fluid p-md-5 d-flex justify-content-center align-items-center"
-    >
-      <div
-        class="row d-flex align-items-center mt-5 p-md-5 justify-content-center"
-      >
-        <div class="col-md-12 text-center">
-          <h1>Be Inspired</h1>
-          <p class="mt-md-4">
-            If you think good design is expensive, you should look at the cost
-            of bad design - Rath Speth
-          </p>
-          <button
-            class="btn mt-md-5 rounded-5 fw-bold pt-md-3 pb-md-3 ps-md-5 fs-5 pe-md-5"
-          >
-            Contact Us Now
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer container-fluid pt-md-5">
-      <div class="row justify-content-evenly">
-        <div class="col-md-4 p-3">
-          <p>OVERVIEW</p>
-          <ul>
-            <li>Home</li>
-            <li>About MICA Technology</li>
-            <li>Our Solutions</li>
-            <li>
-              Our Products
-              <ul>
-                <li>Health</li>
-                <li>Industrial Rubber</li>
-                <li>OEM Parts</li>
-                <li>Semiconductor Parts</li>
-              </ul>
-            </li>
-            <li>Blog</li>
-          </ul>
-        </div>
-        <div class="col-md-4 p-3">
-          <p>CUSTOMER SERVICE</p>
-          <ul>
-            <li>Privacy Policy</li>
-            <li>Refund Policy</li>
-            <li>Terms of Services</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row d-flex justify-content-evenly">
-        <div class="col-md-8">
-          <p class="text-secondary mt-md-5">
-            © 2024 MICA Technology Pte. Ltd. @Aladdin Ben Brahem / LottieFiles
-          </p>
-        </div>
-
-        <div class="col-md-4">
-          <i class="fa-brands h1 text-primary fa-facebook m-1"></i>
-          <i class="fa-brands h1 text-info fa-linkedin m-1"></i>
-          <i class="fa-brands fa-youtube h1 text-danger m-1"></i>
-        </div>
-      </div>
-    </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="script.js"></script>
   </body>
 </html>
