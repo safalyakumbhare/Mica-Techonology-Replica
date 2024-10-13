@@ -6,7 +6,7 @@
     ),
     url(https://micatechnology.net/wp-content/uploads/2021/04/banner_about_mica_technology_hero_banner_v1.png) !important;
 
-    height: 80vh;
+    height: 100%;
     width:100%;
     background-size: cover;
     background-position: center;
@@ -37,4 +37,100 @@
   line-height: 32px;
   font-weight: 400;
   font-style: normal;
+}
+
+.about-2 h1{
+  font-family: "Poppins", sans-serif;
+  font-weight:600;
+  line-height: 72px;
+  font-size: 72px;
+  color:rgb(255, 136, 90);
+}
+
+.about-2 p{
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.about-3 small{
+  font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+  line-height: 23px;
+  font-size: 13px;
+  color: rgb(255, 136, 90);
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-3 h1{
+  font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.about-3 p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: rgb(102, 102, 102);
+  font-style: normal;
+}
+
+.about-4{
+  background-image: linear-gradient(180deg, #5768d0 0%, #150b72 100%) !important;
+  height: 90vh;
+  width: 100%;
+}
+
+.about-4 small{
+  font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+  line-height: 23px;
+  font-size: 13px;
+  color: rgb(255, 136, 90);
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-4 h1{
+  font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+
+}
+
+.about-4 p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: white;
+  font-style: normal;
+}
+
+.col-md-6 .float {
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
